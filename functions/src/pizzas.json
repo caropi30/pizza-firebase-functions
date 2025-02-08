@@ -1,0 +1,198 @@
+[
+    {
+        "title": "Margarita",
+        "description": "Pizza clásica con mozzarella, tomate y albahaca.",
+        "price": 8.99,
+        "img": "https://example.com/margarita.jpg",
+        "code": "PZ001",
+        "stock": 20,
+        "category": "Clásicas",
+        "status": true,
+        "thumbnails": [
+            "https://example.com/margarita_thumb1.jpg",
+            "https://example.com/margarita_thumb2.jpg"
+        ]
+    },
+    {
+        "title": "Pepperoni",
+        "description": "Pizza con queso mozzarella y pepperoni.",
+        "price": 12.99,
+        "img": "https://example.com/pepperoni.jpg",
+        "code": "PZ002",
+        "stock": 15,
+        "category": "Clásicas",
+        "status": true,
+        "thumbnails": [
+            "https://example.com/pepperoni_thumb1.jpg",
+            "https://example.com/pepperoni_thumb2.jpg"
+        ]
+    },
+    {
+        "title": "Cuatro Quesos",
+        "description": "Pizza con mezcla de cuatro quesos: mozzarella, gorgonzola, parmesano y cheddar.",
+        "price": 10.99,
+        "img": "https://example.com/cuatroquesos.jpg",
+        "code": "PZ003",
+        "stock": 12,
+        "category": "Gourmet",
+        "status": true,
+        "thumbnails": [
+            "https://example.com/cuatroquesos_thumb1.jpg",
+            "https://example.com/cuatroquesos_thumb2.jpg"
+        ]
+    },
+    {
+        "title": "Hawaiana",
+        "description": "Pizza con jamón, piña y queso mozzarella.",
+        "price": 11.99,
+        "img": "https://example.com/hawaiana.jpg",
+        "code": "PZ004",
+        "stock": 18,
+        "category": "Exóticas",
+        "status": true,
+        "thumbnails": [
+            "https://example.com/hawaiana_thumb1.jpg",
+            "https://example.com/hawaiana_thumb2.jpg"
+        ]
+    },
+    {
+        "title": "Vegetariana",
+        "description": "Pizza con pimientos, cebolla, aceitunas y champiñones.",
+        "price": 9.99,
+        "img": "https://example.com/vegetariana.jpg",
+        "code": "PZ005",
+        "stock": 10,
+        "category": "Vegetarianas",
+        "status": true,
+        "thumbnails": [
+            "https://example.com/vegetariana_thumb1.jpg",
+            "https://example.com/vegetariana_thumb2.jpg"
+        ]
+    },
+    {
+        "title": "Barbacoa",
+        "description": "Pizza con carne de res, cebolla y salsa BBQ.",
+        "price": 13.99,
+        "img": "https://example.com/barbacoa.jpg",
+        "code": "PZ006",
+        "stock": 14,
+        "category": "Carnes",
+        "status": true,
+        "thumbnails": [
+            "https://example.com/barbacoa_thumb1.jpg",
+            "https://example.com/barbacoa_thumb2.jpg"
+        ]
+    },
+    {
+        "title": "Napolitana",
+        "description": "Pizza con anchoas, alcaparras y aceitunas.",
+        "price": 9.49,
+        "img": "https://example.com/napolitana.jpg",
+        "code": "PZ007",
+        "stock": 12,
+        "category": "Clásicas",
+        "status": true,
+        "thumbnails": [
+            "https://example.com/napolitana_thumb1.jpg",
+            "https://example.com/napolitana_thumb2.jpg"
+        ]
+    },
+    {
+        "title": "Mexicana",
+        "description": "Pizza con chorizo, jalapeños y cebolla.",
+        "price": 12.49,
+        "img": "https://example.com/mexicana.jpg",
+        "code": "PZ008",
+        "stock": 8,
+        "category": "Picantes",
+        "status": true,
+        "thumbnails": [
+            "https://example.com/mexicana_thumb1.jpg",
+            "https://example.com/mexicana_thumb2.jpg"
+        ]
+    },
+    {
+        "title": "Marinera",
+        "description": "Pizza con camarones, almejas y ajo.",
+        "price": 13.99,
+        "img": "https://example.com/marinera.jpg",
+        "code": "PZ009",
+        "stock": 5,
+        "category": "Mariscos",
+        "status": true,
+        "thumbnails": [
+            "https://example.com/marinera_thumb1.jpg",
+            "https://example.com/marinera_thumb2.jpg"
+        ]
+    },
+    {
+        "title": "Carbonara",
+        "description": "Pizza con bacon, huevo y nata.",
+        "price": 14.99,
+        "img": "https://example.com/carbonara.jpg",
+        "code": "PZ010",
+        "stock": 7,
+        "category": "Gourmet",
+        "status": true,
+        "thumbnails": [
+            "https://example.com/carbonara_thumb1.jpg",
+            "https://example.com/carbonara_thumb2.jpg"
+        ]
+    },
+    {
+        "title": "Pollo BBQ",
+        "description": "Pizza con pollo, cebolla y salsa BBQ.",
+        "price": 12.99,
+        "img": "https://example.com/pollobbq.jpg",
+        "code": "PZ011",
+        "stock": 9,
+        "category": "Carnes",
+        "status": true,
+        "thumbnails": [
+            "https://example.com/pollobbq_thumb1.jpg",
+            "https://example.com/pollobbq_thumb2.jpg"
+        ]
+    },
+    {
+        "title": "Mediterránea",
+        "description": "Pizza con tomates secos, aceitunas negras y rúcula.",
+        "price": 13.49,
+        "img": "https://example.com/mediterranea.jpg",
+        "code": "PZ012",
+        "stock": 11,
+        "category": "Gourmet",
+        "status": true,
+        "thumbnails": [
+            "https://example.com/mediterranea_thumb1.jpg",
+            "https://example.com/mediterranea_thumb2.jpg"
+        ]
+    },
+    {
+        "title": "Calabresa",
+        "description": "Pizza con salami y pimientos.",
+        "price": 11.49,
+        "img": "https://example.com/calabresa.jpg",
+        "code": "PZ013",
+        "stock": 13,
+        "category": "Picantes",
+        "status": true,
+        "thumbnails": [
+            "https://example.com/calabresa_thumb1.jpg",
+            "https://example.com/calabresa_thumb2.jpg"
+        ]
+    },
+    {
+        "title": "Gourmet",
+        "description": "Pizza con jamón ibérico, trufa y queso de cabra.",
+        "price": 16.99,
+        "img": "https://example.com/gourmet.jpg",
+        "code": "PZ014",
+        "stock": 6,
+        "category": "Gourmet",
+        "status": true,
+        "thumbnails": [
+            "https://example.com/gourmet_thumb1.jpg",
+            "https://example.com/gourmet_thumb2.jpg"
+        ]
+    }
+]
