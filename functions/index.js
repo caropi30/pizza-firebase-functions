@@ -34,12 +34,12 @@ welcome.use(welcomeRouter);
 
 exports.welcomeFunction = functions.https.onRequest(welcome);
 
-const welcome2 = express();
-welcome2.use(corsMiddleware);
-welcome2.use(welcomeRouter);
+// const welcome2 = express();
+// welcome2.use(corsMiddleware);
+// welcome2.use(welcomeRouter);
 
 // eslint-disable-next-line max-len
-exports.welcome2Function = functions.firestore.document("pizzas/{pid}").onCreate(async (snapshot, context) => {
+/* exports.welcome2Function = functions.firestore.document("pizzas/{pid}").onCreate(async (snapshot, context) => {
   try {
     const pid = context.params.pid;
     const pizza = snapshot.data();
@@ -51,6 +51,32 @@ exports.welcome2Function = functions.firestore.document("pizzas/{pid}").onCreate
     await sendEmail(
         email,
         `Nueva pizza creada: ${pizza.name || "Sin nombre"}`,
+        email,
+        pizza,
+    );
+
+    console.log("Email de notificación enviado para la pizza:", pid);
+    return null;
+  } catch (error) {
+    console.error("Error al procesar la creación de pizza:", error);
+    throw error;
+  }
+});*/
+
+
+// eslint-disable-next-line max-len
+exports.welcome3Function = functions.firestore.document("pizzas/{pid}").onCreate(async (snapshot, context) => {
+  try {
+    const pid = context.params.pid;
+    const pizza = snapshot.data();
+    const email = process.env.SENDGRID_MAIL;
+
+    console.log("Nueva pizza creada:", pizza);
+
+    // Enviar email de notificación con los datos de la pizza
+    await sendEmail(
+        email,
+        `Nueva pizza creada: ${pizza.title || "Sin nombre"}`,
         email,
         pizza,
     );
