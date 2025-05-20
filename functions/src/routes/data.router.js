@@ -134,4 +134,52 @@ router.get("/pizzas/:pid", async (req, res) => {
   }
 });
 
+router.post(
+    "/pizzas/:title/:description/:price/:code/:stock/:category/:status/:pid",
+    async (req, res) => {
+      try {
+        const db = getFirestore();
+
+        const {title, description, price, code, stock, category, status, pid} =
+        req.params;
+
+        if (
+          !title ||
+        !description ||
+        !price ||
+        !code ||
+        !stock ||
+        !category ||
+        !status
+        ) {
+          return res.status(400).json({
+            message: "Todos los parámetros son obligatorios",
+            error: true,
+          });
+        }
+
+        const docRef = db.collection("pizzas").doc(pid);
+
+        await docRef.set({
+          title,
+          description,
+          price: parseFloat(price), // Convertir precio a número
+          code,
+          stock: parseInt(stock), // Convertir stock a número
+          category,
+          status: status === "true", // Convertir status a booleano
+        });
+
+        res
+            .status(201)
+            .json({message: `Pizza ${title} guardada correctamente`, id: code});
+      } catch (error) {
+        console.error("Error al guardar la pizza:", error);
+        res
+            .status(500)
+            .json({message: "Error al guardar la pizza", error: error.message});
+      }
+    },
+);
+
 module.exports = router;

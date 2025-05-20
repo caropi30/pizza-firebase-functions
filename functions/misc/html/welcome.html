@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Pizza Creada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px 5px 0 0;
+        }
+        .content {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 0 0 5px 5px;
+        }
+        .pizza-details {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>¡Nueva Pizza Creada!</h1>
+        </div>
+        <div class="content">
+            <p>Se ha creado una nueva pizza en el sistema:</p>
+            
+            <div class="pizza-details">
+                <h2>{{name}}</h2>
+                <p><strong>Descripción:</strong> {{description}}</p>
+                <p><strong>Precio:</strong> ${{price}}</p>
+                {{#if ingredients}}
+                <p><strong>Ingredientes:</strong></p>
+                <ul>
+                    {{#each ingredients}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                {{/if}}
+            </div>
+
+            <p>Puedes ver más detalles en el panel de administración.</p>
+        </div>
+        <div class="footer">
+            <p>Este es un correo automático de Pizzeria Mama Mia</p>
+        </div>
+    </div>
+</body>
+</html> 
